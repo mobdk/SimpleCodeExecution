@@ -1,6 +1,7 @@
 # SimpleCodeExecution
 Execute tasks.dll with minimum of code, run.exe, tasks.dll and run.bat in same folder, calc is started under scvhost.
 
+compile: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /platform:anycpu /target:exe /unsafe run.cs
 
 run.exe:
 
@@ -16,8 +17,9 @@ public class MyProgram
 
 ```
 
-tasks.dll:
+compile: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /platform:anycpu /target:library /unsafe tasks.cs
 
+tasks.dll:
 ```
 using System;
 using System.Management;
